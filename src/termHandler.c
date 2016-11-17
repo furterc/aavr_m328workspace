@@ -189,16 +189,16 @@ void lightsOn(uint8_t argc, char * argv[])
 
 void setState(uint8_t argc, char * argv[])
 {
-	if (!strcmp(argv[1],"on"))
-		mLED_State = LED_ON_STATE;
-	else if (!strcmp(argv[1],"off"))
-		mLED_State = LED_OFF_STATE;
-	else if (!strcmp(argv[1],"onoff"))
-		mLED_State = LED_ON_OFF_TRANSITION;
-	else if (!strcmp(argv[1],"offon"))
-		mLED_State = LED_OFF_ON_TRANSITION;
-	else if (!strcmp(argv[1],"f"))
-		mLED_State = LED_FREE;
+//	if (!strcmp(argv[1],"on"))
+//		mLED_State = LED_ON_STATE;
+//	else if (!strcmp(argv[1],"off"))
+//		mLED_State = LED_OFF_STATE;
+//	else if (!strcmp(argv[1],"onoff"))
+//		mLED_State = LED_ON_OFF_TRANSITION;
+//	else if (!strcmp(argv[1],"offon"))
+//		mLED_State = LED_OFF_ON_TRANSITION;
+//	else if (!strcmp(argv[1],"f"))
+//		mLED_State = LED_FREE;
 }
 
 //void version()

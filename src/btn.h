@@ -40,4 +40,10 @@ typedef enum {
 void btn_init();
 void btn_checkState();
 
+void buttonOne_setCB(void (*cb)(void));
+void buttonTwo_setCB(void (*cb)(void));
+void buttonThree_setCB(void (*cb)(void));
+void buttonFour_setCB(void (*cb)(void));
+
+
 #endif /* SRC_BTN_H_ */

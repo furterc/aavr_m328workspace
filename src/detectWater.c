@@ -14,7 +14,7 @@
 uint16_t detectWater_run()
 {
     DDRC &= ~(1<<PC1);
-    DIDR0 |= (1<<ADC1D);
+//    DIDR0 |= (1<<ADC1D);
 
     /* Select ADC1 as input */
     ADMUX = (1<<MUX0) | (1<<MUX1) | (1<<MUX2) | (1<<REFS0);

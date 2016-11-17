@@ -6,6 +6,7 @@
  */
 
 #include "timer_two.h"
+#include <avr/io.h>
 
 void (*timerTwoCallback)(void) = 0;
 
@@ -20,7 +21,7 @@ ISR(TIMER2_OVF_vect);
 void timerTwo_init()
 {
     /* Select clock source and prescaler clk/128 */
-    TCCR2B = (1 << CS22);
+    TCCR2 = (1 << CS22);
 
     /* Set initial value of Counter */
     TCNT2 = RTC_C2_TNT2_reg;
@@ -33,7 +34,7 @@ void timerTwo_setCB(void (*cb)(void))
         timerTwoCallback = cb;
 
         /* Enable Timer 2 OVerflow interrupt */
-        TIMSK2 |= (1 << TOIE2);
+        TIMSK |= (1 << TOIE2);
     }
 }
 
